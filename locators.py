@@ -36,7 +36,7 @@ class Locators:
     # Надпись "Профиль" в ЛК
     PROFILE_TEXT = (By.XPATH, "//a[@href='/account/profile']")
     # Надпись "Войти" после регистрации
-    ENTRY_TEXT_AFTER_REGISTRATION = (By.CSS_SELECTOR, ".button_button__33qZ0.button_button_type_primary__1O7Bx.button_button_size_medium__3zxIa")
+    ENTRY_TEXT_AFTER_REGISTRATION = (By.XPATH, "//button[text()='Войти']")
     # Поле для ввода email при регистрации
     EMAIL_FIELD_REGISTRATION = (By.XPATH, "(//input[@type='text' and @name='name'])[2]")
     # Кнопка "Соусы" в конструкторе
