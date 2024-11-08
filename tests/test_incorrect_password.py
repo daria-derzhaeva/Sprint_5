@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from data import TEST_EMAIL, TEST_INCORRECT_PASSWORD, TEST_NAME
 
-class TestRegistration:
+class TestIncorrectPassword:
     def test_incorrect_password(self, driver):
         driver.find_element(*Locators.LK_BUTTON).click()
         driver.find_element(*Locators.REGISTRATION_AT_THE_ENTRANCE_BUTTON).click()
